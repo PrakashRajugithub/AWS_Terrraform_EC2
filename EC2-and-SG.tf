@@ -45,7 +45,7 @@ resource "aws_security_group" "instance-sg" {
 # SSH Key File
 resource "aws_key_pair" "ec2" {
   key_name   = "SSH-key"
-  public_key = file("C:/Users/PrakashSakiraju/.ssh/id_rsa.pub")
+  public_key = file("C:/Users/Username/.ssh/id_rsa.pub")
 }
 
 # EC2 Instances
