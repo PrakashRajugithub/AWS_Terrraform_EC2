@@ -64,13 +64,6 @@ resource "aws_instance" "ec2-instance1" {
               systemctl start httpd
               systemctl enable httpd
               echo "Hellow People. This is $(hostname -f) First Instance" > /var/www/html/index.html 
-              # amazon-linux-extras install java-openjdk11
-              # sudo wget https://aws-codedeploy-ap-southeast-1.s3.amazonaws.com/latest/install
-              # sudo chmod 755 ./install
-              # sudo ./install auto
-              # sudo systemctl start codedeploy-agent
-              # sudo systemctl enable codedeploy-agent
-              # sudo pip install awscli
               EOF
   
   tags = {
@@ -94,13 +87,6 @@ resource "aws_instance" "ec2-instance2" {
               systemctl start httpd
               systemctl enable httpd
               echo "Hellow People. This is $(hostname -f) Second Instance" > /var/www/html/index.html 
-              # amazon-linux-extras install java-openjdk11
-              # sudo wget https://aws-codedeploy-ap-southeast-1.s3.amazonaws.com/latest/install
-              # sudo chmod 755 ./install
-              # sudo ./install auto
-              # sudo systemctl start codedeploy-agent
-              # sudo systemctl enable codedeploy-agent
-              # sudo pip install awscli
               EOF
   
   tags = {
